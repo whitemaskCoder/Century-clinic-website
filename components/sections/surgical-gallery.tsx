@@ -69,7 +69,9 @@ export function SurgicalGallery() {
                       </CardItem>
                     </div>
                   </CardItem>
-                  <CardItem translateZ={20} className="absolute inset-0 rounded-xl bg-gradient-to-br from-blue-600/10 to-teal-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+                  <CardItem translateZ={20} className="absolute inset-0 rounded-xl bg-gradient-to-br from-blue-600/10 to-teal-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                    <div />
+                  </CardItem>
                 </CardBody>
               </CardContainer>
             </motion.div>
