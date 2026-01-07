@@ -24,8 +24,8 @@ export const FloatingNav = ({
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     if (typeof current === "number") {
-      const previous = scrollYProgress.getPrevious() ?? 0;
-      let direction = current - previous;
+      const previous = scrollYProgress.getPrevious();
+      let direction = current - (typeof previous === "number" ? previous : 0);
 
       if (scrollYProgress.get() < 0.05) {
         setVisible(false);
