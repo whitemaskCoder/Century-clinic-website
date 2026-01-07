@@ -22,7 +22,7 @@ export function Footer() {
               duration={2000}
               as="a"
               href="#contact"
-              onClick={(e) => {
+              onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
                 e.preventDefault();
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }}
