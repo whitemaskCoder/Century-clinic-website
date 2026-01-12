@@ -19,7 +19,7 @@ Visit: https://vercel.com
 ## Step 4: Configure (Usually Auto-Detected!)
 Vercel should automatically detect:
 - **Framework Preset**: Next.js ✅
-- **Root Directory**: `./` ✅
+- **Root Directory**: `./` ✅push
 - **Build Command**: `npm run build` ✅
 - **Output Directory**: `.next` ✅
 
