@@ -1,13 +1,19 @@
 "use client";
 
+// Navigation bar component - fixed at the top of the page
+// Includes logo, navigation links, and appointment button
+// Responsive design with mobile menu toggle
+
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { MovingBorder } from "@/components/ui/moving-border";
 
 export function Navbar() {
+  // State to control mobile menu open/close
   const [isOpen, setIsOpen] = useState(false);
 
+  // Navigation menu items with their corresponding section IDs
   const navItems = [
     { name: "Home", link: "#home" },
     { name: "About", link: "#about" },
@@ -38,7 +44,7 @@ export function Navbar() {
               <motion.a
                 key={item.name}
                 href={item.link}
-                onClick={(e) => {
+                onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
                   e.preventDefault();
                   const element = document.querySelector(item.link);
                   if (element) {
@@ -67,7 +73,7 @@ export function Navbar() {
                 duration={2000}
                 as="a"
                 href="#contact"
-                onClick={(e) => {
+                onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
                   e.preventDefault();
                   const element = document.querySelector("#contact");
                   if (element) {
@@ -124,7 +130,7 @@ export function Navbar() {
               <a
                 key={item.name}
                 href={item.link}
-                onClick={(e) => {
+                onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
                   e.preventDefault();
                   setIsOpen(false);
                   const element = document.querySelector(item.link);
@@ -144,7 +150,7 @@ export function Navbar() {
                 duration={2000}
                 as="a"
                 href="#contact"
-                onClick={(e) => {
+                onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
                   e.preventDefault();
                   setIsOpen(false);
                   const element = document.querySelector("#contact");

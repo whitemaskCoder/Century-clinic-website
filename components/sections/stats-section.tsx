@@ -1,10 +1,15 @@
 "use client";
 
+// Statistics section component
+// Displays Dr. Theva's key achievements and experience numbers
+// Uses animated count-up effect for visual appeal
+
 import React from "react";
 import { motion } from "framer-motion";
 import { CountUpNumber } from "@/components/ui/countdown-number";
 
 export function StatsSection() {
+  // Statistics data with animation delays for staggered effect
   const stats = [
     {
       number: 2000,

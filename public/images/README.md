@@ -16,3 +16,4 @@ The images will be displayed in:
 - Hero section background (surgery-1.jpg)
 - Surgical Gallery section (all 4 images)
 
+

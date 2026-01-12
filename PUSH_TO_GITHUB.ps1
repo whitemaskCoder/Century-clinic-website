@@ -22,3 +22,4 @@ Write-Host "git remote add origin https://github.com/YOUR_USERNAME/century-clini
 Write-Host "git branch -M main" -ForegroundColor White
 Write-Host "git push -u origin main" -ForegroundColor White
 
+
